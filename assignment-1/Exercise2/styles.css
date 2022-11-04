@@ -8,13 +8,23 @@ a {
     height: 30% ;
 }
 
-body{
-    background-image: url(../assets/images/background.jpg);
+main{
+    background-color: #d3d3d3;
+    padding: 2% 0 5% 0;
+}
+
+img{
+    display: block;
+}
+
+footer{
+    background-color: #fff;
+    color: #fff;
+    font-size: 0.8rem;
 }
 
 .navbar{
     list-style-type: none;
-    margin: 0 0 15px 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
