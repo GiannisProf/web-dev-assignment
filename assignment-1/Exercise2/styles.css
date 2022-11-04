@@ -1,28 +1,13 @@
 *{
     margin: 0;
+    padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
-a {
-    display: inline;
-    height: 30% ;
+.logo{
+    width: 7%;
 }
-
-main{
-    background-color: #d3d3d3;
-    padding: 2% 0 5% 0;
-}
-
-img{
-    display: block;
-}
-
-footer{
-    background-color: #fff;
-    color: #fff;
-    font-size: 0.8rem;
-}
-
 .navbar{
     list-style-type: none;
     padding: 0;
@@ -38,7 +23,7 @@ footer{
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 16px;
     text-decoration: none;
 }
 
@@ -48,4 +33,123 @@ footer{
 
 .navbar .home{
     background-color: #50A060;
+}  
+
+main{
+    background-color: #d3d3d3;
+}
+
+aside {
+    width: 30%;
+    float: right;
+    background-color: #d3d3d3;
+    padding-top: 15%;
+    margin-right: 4%;
+}
+
+.side{
+    padding: 1rem 0.8rem 1rem 0.8rem;
+    margin-left: 3rem;
+}
+
+.side a{
+    display: block;
+}
+
+.advertisement{
+    padding: 1rem;
+    margin: 0 3rem 0 5rem;
+    width: 65%;
+}
+
+.ads, .ads h4{
+    padding: 1rem 1rem;
+}
+
+
+.adv-img, .side-img{
+    width: 75%;
+    margin: 1rem 0 1rem 0;
+    transition: transform .2s;
+}
+
+.adv-img:hover, .side-img:hover {
+    transform: scale(1.05); 
+}
+
+.mid a img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+.prefooter{
+    padding-bottom: 2%;
+}
+
+.prefooter p{
+    margin: 2rem;
+    text-align: center;
+}
+
+.prefooter img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+}
+
+.prefooter > a:hover {
+    opacity: 0.5;
+}
+
+footer{
+    font-size: 80%;
+    background-color: #a9a9a9;
+}
+
+footer p{
+    text-align: center;
+    font-size: 90%;
+}
+
+footer nav{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav > li{
+    float: left;
+}
+
+nav li a{
+    display: block;
+    color: #111;
+    text-align: center;
+    padding: 0.5rem 16px;
+    text-decoration: none;
+}   
+
+.social {
+    text-align:center;
+    padding: 0.5rem 0.5rem;
+}
+  
+.social > a {
+    font-size:24px;
+    width:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+}
+
+.social > a:hover {
+    opacity:0.9;
 }
