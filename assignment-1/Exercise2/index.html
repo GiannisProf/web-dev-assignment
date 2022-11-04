@@ -5,11 +5,12 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-       <a href="index.html"><img src="../assets/images/gptech-logo.png" width= "7%" alt="gptech-logo"></a>
+       <a href="index.html"><img class="logo" src="../assets/images/gptech-logo.png" alt="gptech-logo"></a>
         <nav>
             <ul class="navbar">
                 <li class="home"><a href="index.html">Home</a></li>
@@ -20,42 +21,54 @@
         </nav>
     </header>
     <main>
-        <section class="ads">
-            <article class="ad"><p>Νεος AMD επεξεργαστής! Τσέκαρε τον</p></article>
-            <br>
-            <article class="ad"></article>><p>Έρχεται βαρύς χειμώνας και φέτος...Εξοπλίσου κατάλληλα με τις νέες μας σόμπες!</p></article>
-            <br>
-            <article class="ad"><p>Ποτέ δεν είναι νωρίς για τα ψώνια των γιορτών!</p></article>
-        </section>
-        <section>
-            <p>Το θέλεις; Το έχουμε! <img src="../assets/images/gptech-logo_grey.png" width=7% alt="gp tech logo"></p>
-        </section>
-        <br>
-        <br>    
-        <section>
-            <p>Είμαστε εδώ για σένα, επικοινώνησε μαζί μας <a href="contact.html">εδώ</a></p>
-        </section>
         <aside>
-            <p>Οι χρήστες συνήθως προτιμούν αυτές τις κατηγορίες :</p>
-            <section>
+            <p>Οι χρήστες συνήθως προτιμούν αυτές τις κατηγορίες:</p>
+            <article class="side">
                 <a href="laptops.html">Laptops</a>
-            </section>
-            <section>
+                <a href="laptops.html"><img class="side-img" src="../assets/images/laptops.jpg" width="35%" alt="laptops image"></a>
+            </article>
+            <article class="side">
                 <a href="smartphones.html">Smartphones</a>
-            </section>
+                <a href="smartphones.html"><img class="side-img" src="../assets/images/smartphones.jpg" width="35%" alt="smartphones image"></a>
+            </article>
         </aside>
+        <section class="advertisement">
+            <article class="ads">
+                <h4>Νεος AMD επεξεργαστής! Τσέκαρε τον</h4> 
+                <img class="adv-img" src="../assets/images/amd_ad.jpg" alt="amd image">
+            </article>
+            <article class="ads">
+                <h4>Έρχεται βαρύς χειμώνας και φέτος...Εξοπλίσου κατάλληλα με τις νέες μας σόμπες!</h4>
+                <img class="adv-img" src="../assets/images/sompa_ad.jpg" alt="amd image">
+            </article>
+            <article class="ads">
+                <h4>Ποτέ δεν είναι νωρίς για τα ψώνια των γιορτών!</h4>
+                <img class="adv-img" src="../assets/images/xmas_ad.jpg" alt="xmas image">
+            </article>
+        </section>
+        <section class="mid">
+            <a href="index.html"><img src="../assets/images/gptech-logo_grey.png" width=7% alt="gp tech logo"></a> 
+        </section>    
+        <section class="prefooter">
+            <p>Είμαστε εδώ για σένα, επικοινώνησε μαζί μας <a href="contact.html">εδώ</a></p>
+            <a href="contact.html"><img src="../assets/images/mail.png" alt="mail image"></a>
+        </section>
     </main>
     <footer>
-        <section>
-            <p><a href="#"><i>instagram</i> </a><a href="#"><i>snapchat</i> </a><a href="#"><i>twitter</i></a> <a href="#"><i>facebook</i></a></p>
+        <section class="social">
+            <a href="#"><i class="icon ion-social-github"></i></a>
+            <a href="#"><i class="icon ion-social-linkedin"></i></a>
+            <a href="#"><i class="icon ion-social-twitter"></i></a>
+            <a href="#"><i class="icon ion-social-google"></i></a></div>
         </section>
+        <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="home"><a href="index.html">Home</a></li>
                 <li><a href="product-categories.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About us</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="../index.html">Back to Contents</a></li>
             </ul>
+        </nav>
             <p>This website was developed during AUEB's "Web Programming" course. Copyright &copy; 2021, Ioannis Papachristou, Ioannis Profis. All rights reserved.</p>
     </footer>
 </body>
