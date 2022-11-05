@@ -5,21 +5,22 @@
     box-sizing: border-box;
 }
 
-.logo{
+.logo{            /*width for gptech logo*/
     width: 7%;
 }
-.navbar{
+
+.navbar{            /*style for navbar*/
     list-style-type: none;
     padding: 0;
     overflow: hidden;
     background-color: #333;
 }
 
-.navbar > li{
+.navbar > li{           
     float: left;
 }
 
-.navbar li a{
+.navbar li a{ 
     display: block;
     color: white;
     text-align: center;
@@ -27,7 +28,7 @@
     text-decoration: none;
 }
 
-.navbar li a:hover{
+.navbar li a:hover{             /*allazei to xrwma sto navbar otan kanw hover*/
     background-color: #111;
 }
 
@@ -39,7 +40,9 @@ main{
     background-color: #d3d3d3;
 }
 
-aside {
+/*styles for index.html*/
+
+aside {                             /*sets size and position for the aside element*/
     width: 30%;
     float: right;
     background-color: #d3d3d3;
@@ -73,7 +76,7 @@ aside {
     transition: transform .2s;
 }
 
-.adv-img:hover, .side-img:hover {
+.adv-img:hover, .side-img:hover, .product   img:hover {       /*image size becomes 1.05 times bigger on hover*/
     transform: scale(1.05); 
 }
 
@@ -84,20 +87,25 @@ aside {
     width: 35%;
 }
 
-.prefooter{
-    padding-bottom: 2%;
+.prefooter{                             /*position in center*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
 
-.prefooter p{
+.prefooter p{           /*position in center*/
     margin: 2rem;
     text-align: center;
 }
+
 
 .prefooter img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 8%;
+    width: 20%;
+    padding-bottom: 1rem;
 }
 
 .prefooter > a:hover {
@@ -152,4 +160,63 @@ nav li a{
 
 .social > a:hover {
     opacity:0.9;
+}
+
+footer p{
+    padding-bottom: 5px;
+}
+
+/*styles for product-categories.html*/
+
+.products{
+    padding: 2rem 1rem 1rem;
+}
+
+.products ul{
+    list-style-type: none;
+}
+
+.product{
+    padding-bottom: 2rem;
+}
+
+.products img{
+    width: 50%; 
+    margin-left: 23%;
+    transition: transform .2s;
+}
+
+.products h3, .products li{
+    text-align: center;
+}
+
+.products h3{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.products ul{
+    padding-top: 1rem;
+}
+
+.products li{
+    padding-top: 0.5rem;
+    font-size: 90%;
+    font-weight: 700;
+}
+
+.product div{
+    padding: 2rem 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1003)'%3e%3c/rect%3e%3cpath d='M1440 0L920.55 0L1440 115.21z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M920.55 0L1440 115.21L1440 227.82L815.77 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M815.77 0L1440 227.82L1440 274.42L321.83 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M321.8299999999999 0L1440 274.42L1440 359.22L238.0999999999999 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L490.68 560L0 351.38z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 351.38L490.68 560L581.16 560L0 337.21999999999997z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 337.22L581.16 560L851.41 560L0 191.25000000000003z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 191.25L851.41 560L1239.24 560L0 113.21z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1003'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.products ul{
+    width: 30%;
+    background-image: url("../assets/images/paper1.jpg");
+    padding-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
