@@ -1,0 +1,288 @@
+/*-----------universal rules---------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("//assets/docs/Roboto/Roboto-Bold.ttf") format('truetype') ;
+}
+
+/*o parakatw kanonas kanei to swma kathe selidas grid me 3 rows(header, main, footer) pou h kathe mia 
+katalamvanei automato megethos analoga me to periexomeno tou */
+
+body{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+}
+
+/*------------------styles for the header-------------------*/
+/*The navigation inside the header is made with use of flex-box*/
+
+
+/*header logo styles*/
+.logo-a{
+    width: 5%;
+}
+
+.logo{          
+    width: 100%;
+    display: block;
+}
+
+header{
+    display: flex;
+}
+
+.top-nav{
+    width: 95%;
+}
+
+.top-nav ul{
+    display: flex;
+}
+
+.navbar{            /*style for navbar*/
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar > li{           
+    float: left;
+}
+
+.navbar li a{ 
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+}
+
+.navbar li a:hover{             /*allazei to xrwma sto navbar otan kanw hover*/
+    background-color: #111;
+}
+
+.navbar .active{
+    background-color: #50A060;
+}  
+
+main{
+    background-color: #d3d3d3;
+}
+
+/*styles for index.html*/
+
+main{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+}
+
+/*to main content ths main, dhladh oi diafhmiseis kai to aside ginontai position me flex-box*/
+
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {                             /*sets size and position for the aside element*/
+    margin-top: 15%;
+    width: 30%;
+    background-color: #d3d3d3;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.side a{
+    width: 75%;
+}
+
+.side img{
+    display: block;
+    width: 100%;
+}
+
+.advertisement{
+    margin-left: 2%;
+    padding: 1rem;
+    width: 65%;
+}
+
+.ads, .ads h4{
+    padding: 1rem 1rem;
+}
+
+.adv-img, .side-img{
+    width: 75%;
+    margin: 1rem 0 1rem 0;
+    transition: transform .2s;
+}
+
+.adv-img:hover, .side-img:hover, .product   img:hover {       /*image size becomes 1.05 times bigger on hover*/
+    transform: scale(1.05); 
+}
+
+.adv-img:hover, .side-img:hover{
+    box-shadow: 10px 15px #868686;
+}
+
+.mid{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mid a img{
+    display: block;
+    width: 100%;
+}
+
+.prefooter {                             /*position in center*/
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prefooter-container p{           /*position in center*/
+    margin: 2rem;
+    text-align: center;
+}
+
+.prefooter a img{
+    display: block;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.prefooter > a:hover {
+    opacity: 0.5;
+}
+
+
+/*styles for the footer*/
+
+footer{
+    font-size: 80%;
+    background-color: #a9a9a9;
+}
+
+footer p{
+    text-align: center;
+    font-size: 90%;
+}
+
+/*the footer navbar is made with flex box*/
+
+footer nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li a{
+    display: block;
+    color: #111;
+    text-align: center;
+    padding: 0.5rem 16px;
+    text-decoration: none;
+}
+
+.social {
+    text-align:center;
+    padding: 0.5rem 0.5rem;
+}
+  
+.social > a {
+    font-size:24px;
+    width:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+}
+
+.social > a:hover {
+    opacity:0.9;
+}
+
+footer p{
+    padding-bottom: 5px;
+}
+
+/*styles for product-categories.html*/
+
+.products{
+    padding: 2rem 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1% 5%;
+}
+
+.products ul{
+    list-style-type: none;
+}
+
+.product{
+    padding-bottom: 2rem;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product div{
+    flex: 1 1 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0.5rem;
+    width: 100%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1003)'%3e%3c/rect%3e%3cpath d='M1440 0L920.55 0L1440 115.21z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M920.55 0L1440 115.21L1440 227.82L815.77 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M815.77 0L1440 227.82L1440 274.42L321.83 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M321.8299999999999 0L1440 274.42L1440 359.22L238.0999999999999 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L490.68 560L0 351.38z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 351.38L490.68 560L581.16 560L0 337.21999999999997z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 337.22L581.16 560L851.41 560L0 191.25000000000003z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 191.25L851.41 560L1239.24 560L0 113.21z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1003'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.product img{
+    justify-content: center;
+    flex: auto;
+    transition: transform .2s;
+}
+
+.products h3, .products li{
+    text-align: center;
+}
+
+.products h3{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.products ul{
+    padding-top: 1rem;
+}
+
+.products li{
+    padding-top: 0.5rem;
+    font-size: 90%;
+    font-weight: 700;
+}
+
+.products ul{
+    background-image: url("../assets/images/paper1.jpg");
+    padding-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
