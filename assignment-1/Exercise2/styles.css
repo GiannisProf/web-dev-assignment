@@ -220,3 +220,24 @@ footer p{
     margin-left: auto;
     margin-right: auto;
 }
+
+.contact-form{
+    padding: 1rem 1rem 5rem;
+    margin-left: 43%;
+}
+
+.contact-form h4{
+    padding-bottom: 1rem;
+}
+
+.headings{
+    padding: 1.5rem;
+}
+
+.headings h2{
+    padding-bottom: 3rem;
+}
+
+.headings h3{
+    text-align: center;
+}
