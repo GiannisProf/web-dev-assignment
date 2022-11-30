@@ -84,7 +84,6 @@ main{
 
 /*to main content ths main, dhladh oi diafhmiseis kai to aside ginontai position me flex-box*/
 
-
 .main-content{
     display: flex;
     flex-wrap: wrap;
@@ -348,6 +347,58 @@ xalaei h analysh tou*/
 }
 
 .about-main button:hover{
+    opacity: .8;
+    transform: scale(1.05); 
+}
+
+/*---------contact styles---------*/
+
+.headings{
+    padding: 1.5rem;
+}
+
+.headings h2{
+    padding-bottom: 3rem;
+}
+
+.headings h3{
+    text-align: center;
+}
+
+.contact-form h4{
+    text-align: center;
+}
+
+.contact-form form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.contact-form input{
+    padding-bottom: 0.5rem;
+}
+
+.contact-form label{
+    padding: 1rem 0 1rem;
+}
+
+.contact-form button{
+    background-color: #909090;
+    border: none;
+    color: #fff;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform .2s;
+}
+
+.contact-form button:hover{
     opacity: .8;
     transform: scale(1.05); 
 }
