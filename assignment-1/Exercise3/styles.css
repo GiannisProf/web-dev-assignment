@@ -226,7 +226,11 @@ footer p{
 
 /*styles for product-categories.html*/
 
-.products{
+/*kathe proion einai ena grid element
+to product section periexei 2 seires 
+me 3 proionta h kathemia*/
+
+.products{   
     padding: 2rem 0 2rem 7rem;
     display: grid;
     grid-template-columns: repeat(3,28%);
@@ -237,11 +241,21 @@ footer p{
     list-style-type: none;
 }
 
+/*kathe stoixeio tou kathe proiontos einai
+ena flex item me katakoryfo prosanatolismo
+to flex xrhsimopoieitai kyriws gia to poly
+pio eukolo kentrarisma twn stoixeiwn tou
+product*/
+
 .product{
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
 }
+
+/*xrhsimopoieitai svg gia to background tou div
+to svg einai poly kalos morfotypos gt pote den 
+xalaei h analysh tou*/
 
 .product div{
     display: flex;
@@ -278,7 +292,53 @@ footer p{
 .products ul{
     background-image: url("../assets/images/paper1.jpg");
     padding-bottom: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
+}
+
+
+/*---------about us styles--------------*/
+
+.about-main{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+
+.person{
+    padding: 3rem 0 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.person div{
+    width: 45%;
+}
+
+.person div img{
+    width: 100%;
+}
+
+.cv{
+    margin-right: 7rem;
+}
+
+.person h1{
+    padding-top: 0.5rem;
+}
+
+.person p{
+    padding-bottom: 0.5rem;
+}
+
+.about-main button{
+    background-color: #909090;
+    border: none;
+    color: white;
+    margin: 1rem 0 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
 }
