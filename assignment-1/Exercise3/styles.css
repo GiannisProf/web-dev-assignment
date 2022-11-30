@@ -379,7 +379,8 @@ xalaei h analysh tou*/
 }
 
 .contact-form input{
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.2rem;
+    font-size: large;
 }
 
 .contact-form label{
