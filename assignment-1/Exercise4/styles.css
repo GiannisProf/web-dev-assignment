@@ -35,7 +35,6 @@ body{
 
 header{
     display: flex;
-    position: fixed;
 }
 
 .top-nav{
@@ -406,93 +405,13 @@ xalaei h analysh tou*/
 }
 
 /*---------media queries--------------
-we have 5 breakpoints starting of with 
-very small devices like phones, then small
+we have 3 breakpoints starting of with 
+small devices like phones, then small
 devices like tablets and large phones, then
 medium sized devices like landscape tablets
 then laptops and at the end large laptops
 and desktops*/
 
-/* @media only screen and (max-width: 600px) {
-    
-    header{
-        flex-direction: column;
-    }
-    
-    .logo-a{
-        display: none;
-    }
-
-    .top-nav{
-        width: 100%;
-    }
-
-    .navbar li a{
-        padding: 0.5rem 1rem;
-    }
-
-    .top-nav ul{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    aside{
-        display: none;
-    } 
-
-    h1,h2,h3,h4,h5,p{
-        font-size: 90%;
-    }
-    
-    .adv-img{
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        transition: transform .2s;
-    }
-
-    .adv-img:hover{
-        transform: scale(1.0);
-        box-shadow: none;
-    }
-
-    .advertisement{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-left: 0.1%;
-        padding: 0;
-        width: 100%;
-    }
-
-    .ads{
-        padding: .5rem;
-    }
-
-    .mid{
-        width: 100%;
-    }
-    
-    .prefooter {                          
-        width: 25%;
-    }
-
-    footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    footer nav ul{
-        width: 80%;
-        margin-left: 1rem;
-    }
-
-    .products{
-        grid-template-columns: 1fr;
-    }
-    
-}*/
 
 @media only screen and (max-width: 800px){
     
@@ -510,7 +429,8 @@ and desktops*/
 
     .navbar li a{
         padding: 0.5rem 1rem;
-        font-size: 80%;
+        font-size: 95%;
+        font-weight: bolder;
     }
 
     .top-nav ul{
@@ -521,10 +441,6 @@ and desktops*/
     aside{
         display: none;
     } 
-
-    h1,h2,h3,h4,h5,p{
-        font-size: large;
-    }
     
     .adv-img{
         width: 100%;
@@ -548,10 +464,11 @@ and desktops*/
 
     .mid{
         width: 100%;
+        padding: 2rem 0 5rem;
     }
     
-    .prefooter {                             /*position in center*/
-        width: 25%;
+    .prefooter {                          
+        display: none;
     }
 
     .prefooter-container p{
@@ -572,13 +489,50 @@ and desktops*/
     footer nav ul, footer nav p{
         width: 80%;
         margin-left: 1rem;
-        font-size: 80%;
+        font-size: 90%;
     }
+
+    /*product-categories*/
 
     .products{
         grid-template-columns: 1fr;
+        padding: 2rem 2rem 10rem 2rem;
+        row-gap: 1%;
     }
     
+    .product{
+        padding: 0;
+    }
+
+    .products h3{
+        font-size: 95%;
+    }
+
+    /*about us*/
+
+    .about-main{
+        grid-template-columns: 1fr;
+    }
+
+    .person{
+        padding: 3rem 0 2rem 0rem;
+    }
+
+    button, .product div img{
+        transition: transform .2s;
+    }
+
+    button:hover, .product div img{
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    /*contact us*/
+
+    .headings h2{
+        text-align: center;
+    }
+
 } 
 
 @media only screen and (min-width: 801px) and (max-width: 1300px) {
@@ -599,6 +553,11 @@ and desktops*/
     aside{
         width: 50%;
         margin-top: 0;
+    }
+
+    aside p, .side a{
+        font-size: 90%;
+        font-weight: bolder;
     }
 
     .advertisement{
@@ -624,6 +583,40 @@ and desktops*/
     }
 
     .side a{
-        width: 100%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    /*product-categories*/
+
+    .products{
+        grid-template-columns: repeat(2,1fr);
+        padding: 2rem 2rem 10rem 2rem;
+        row-gap: 3%;
+    }
+    
+    .product{
+        padding: 0;
+    }
+
+    .products li{
+        font-size: larger;
+    }
+
+    button, .product div img{
+        transition: transform .2s;
+    }
+
+    button:hover, .product div img{
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    /*contact us*/
+
+    .headings h2{
+        text-align: center;
+    }
+
 }
