@@ -258,35 +258,64 @@ footer p{
     transform: scale(1.05); 
 }
 
+
+/*---------product-items styles-------------*/
+
+.slogan{
+    padding: 2rem 0 1rem;
+    text-align: center;
+}
+
+.items{
+    padding: 2rem;
+}
+
 .item{
     background-color: #c2c2c2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    text-align: center;
-    font-family: arial;
-    padding-top: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.item p{
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-    background-color: #d7d7d7;
-}
-
-.item img{
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-    width: 60%;
+    width: 45%;
+    margin: 0 auto 3rem auto;
 }
 
 .item a{
+    color :#111;
     text-decoration: none;
+}
+
+.item-name, .price {
+    font-size: x-large;
+    padding: 1rem;
+}
+
+.code{
+    font-size: 90%;
+    padding: 0 1rem 1rem;
+}
+
+.rating, .stars{
+    padding-left: 1rem;
+}
+
+.item-img-container{
+    width: 70%;
+    padding: 1rem;
+    margin: auto;
+}
+
+.item img{
+    width: 100%;
+}
+
+.description h4{
+    padding: 1rem 1rem 0.5rem;
+    font-size: large;
+}
+
+.description p{
+    text-align: center;
+    background-color: #ebeaea;
+    line-height: 20px;
+    padding: 1.5rem 2rem 1.5rem;
 }
 
 .item img:hover{
@@ -307,39 +336,36 @@ footer p{
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-.item code {
-    color: grey;
-    padding-top: 5%;
-}
-
-.item h3 {
-    padding-top: 5%;
-    font-size: xx-large;
-}
-
-.item h4 {
-    font-size: larger;
-    padding-top: 5%;
-    padding-bottom: 2%;
-}
 
 .checked {
     color: #50A060;
 }
 
+.product-images{
+    display: block;
+    padding: 1rem 0 1rem;
+    width: 100%;
+}
+
 .product-details {
     text-align: center;
+    line-height: 20px;
+    font-size: large;
+}
+
+.product-details p{
+    padding: 1rem 22rem;
 }
 
 .product-details h3{
     padding-top: 1%;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .product-details p {
     text-align: center;
-    background-color: #d7d7d7;
-    font-size: larger;
-    margin-left: 20%;
-    margin-right: 20%;
+}
+
+.processor{
+    padding-top: 1rem;
 }
