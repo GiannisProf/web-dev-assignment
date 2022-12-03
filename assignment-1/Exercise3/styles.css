@@ -472,7 +472,6 @@ xalaei h analysh tou*/
 .description{
     display: flex;
     flex-direction: column;
-    flex: 1 1 0;
 }
 
 
@@ -499,6 +498,22 @@ xalaei h analysh tou*/
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.smartphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #c2c2c2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 30%;
+    margin-bottom: 4rem;
+    margin-left: 35%;
+}
+
+.smartphone img{
+    width: 100%;
 }
 
 .checked {
