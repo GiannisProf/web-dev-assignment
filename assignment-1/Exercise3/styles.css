@@ -472,6 +472,7 @@ xalaei h analysh tou*/
 .description{
     display: flex;
     flex-direction: column;
+    flex: 1 1 0;
 }
 
 
@@ -510,6 +511,11 @@ xalaei h analysh tou*/
     width: 30%;
     margin-bottom: 4rem;
     margin-left: 35%;
+}
+
+.smartphone a{
+    color: #111;
+    text-decoration: none;
 }
 
 .smartphone img{
