@@ -404,6 +404,157 @@ xalaei h analysh tou*/
     transform: scale(1.05); 
 }
 
+/*---------product-items styles-------------*/
+
+.slogan{
+    padding: 2rem 0 1rem;
+    text-align: center;
+}
+
+.items{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    gap: 5% 3%;
+    margin-left: 5.5%;
+}
+
+.item{
+    background-color: #c2c2c2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item:nth-child(4) , .item:nth-child(5){
+    margin-bottom: 10rem;
+}
+
+.item a{
+    color :#111;
+    text-decoration: none;
+}
+
+.item-name, .price {
+    font-size: x-large;
+    padding: 1rem;
+}
+
+.code{
+    font-size: 90%;
+    padding: 0 1rem 1rem;
+}
+
+.rating, .stars{
+    padding-left: 1rem;
+}
+
+.rating-container{
+    display: flex;
+}
+
+.item-img-container{
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+}
+
+.item img{
+    width: 100%;
+}
+
+.description h4{
+    padding: 1rem 1rem 0.5rem;
+    font-size: large;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+
+.description p{
+    background-color: #ebeaea;
+    line-height: 20px;
+    padding: 1.5rem 2rem 1.5rem;
+    flex: 1 1 0;
+}
+
+.item img:hover{
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.smartphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #c2c2c2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 30%;
+    margin-bottom: 4rem;
+    margin-left: 35%;
+}
+
+.smartphone a{
+    color: #111;
+    text-decoration: none;
+}
+
+.smartphone img{
+    width: 100%;
+}
+
+.checked {
+    color: #50A060;
+}
+
+.product-images{
+    display: block;
+    padding: 1rem 0 1rem;
+    width: 100%;
+}
+
+.product-details {
+    text-align: center;
+    line-height: 20px;
+    font-size: large;
+}
+
+.product-details p{
+    padding: 1rem 22rem;
+}
+
+.product-details h3{
+    padding-top: 1%;
+    font-size: x-large;
+}
+
+.product-details p {
+    text-align: center;
+}
+
+.processor{
+    padding-top: 1rem;
+}
+
 /*---------media queries--------------
 we have 3 breakpoints starting of with 
 small devices like phones, then small
@@ -464,7 +615,7 @@ and desktops*/
 
     .mid{
         width: 100%;
-        padding: 2rem 0 5rem;
+        padding: 5rem 0 5rem;
     }
     
     .prefooter {                          
@@ -504,6 +655,10 @@ and desktops*/
         padding: 0;
     }
 
+    .product:nth-child(5){
+        padding-bottom: 2rem;
+    }
+
     .products h3{
         font-size: 95%;
     }
@@ -533,6 +688,48 @@ and desktops*/
         text-align: center;
     }
 
+    /*product-items*/
+
+    .slogan{
+        text-align: center;
+        font-size: 95%;
+    }
+
+    .items{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1%;
+        margin-right: 1rem;
+        font-size: 90%;
+    }
+
+    .item:nth-child(5){
+        margin-bottom: 15rem;
+    }
+
+    .item:nth-child(4){
+        margin-bottom: 0;
+    }
+
+    /*smartphone*/
+
+    .smartphone{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .product-details p {
+        padding: 1rem 3rem;
+        text-align: center;
+    }
+
+    .processor{
+        width: 80%;
+    }
+
+    .product-images{
+        display: none;
+    }
 } 
 
 @media only screen and (min-width: 801px) and (max-width: 1300px) {
@@ -619,90 +816,63 @@ and desktops*/
         text-align: center;
     }
 
-}
+    /*product-items*/
 
-.item{
-    background-color: #c2c2c2;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    text-align: center;
-    font-family: arial;
-    padding-top: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .slogan{
+        text-align: center;
+        font-size: 95%;
+    }
 
-.item p{
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-    background-color: #d7d7d7;
-}
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2% 5%;
+        margin-right: 1rem;
+    }
 
-.item img{
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-    width: 60%;
-}
+    .items h3{
+        font-size: 90%;
+    }
 
-.item a{
-    text-decoration: none;
-}
+    .price{
+        font-size: 95%;
+    }
 
-.item img:hover{
-    animation: shake 0.5s;
-}
+    .items p{
+        font-size: 85%;
+    }
 
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
+    .item:nth-child(5){
+        margin-bottom: 10rem;
+    }
 
-.item code {
-    color: grey;
-    padding-top: 5%;
-}
+    .item:nth-child(4){
+        margin-bottom: 0;
+    }
 
-.item h3 {
-    padding-top: 5%;
-    font-size: xx-large;
-}
+    .item-img-container{
+        width: 80%;
+    }
 
-.item h4 {
-    font-size: larger;
-    padding-top: 5%;
-    padding-bottom: 2%;
-}
+    /*smartphone*/
 
-.checked {
-    color: #50A060;
-}
+    .smartphone{
+        width: 70%;
+        margin-left: 15%;
+    }
 
-.product-details {
-    text-align: center;
-}
+    .product-details p {
+        padding: 1rem 3rem;
+        text-align: center;
+    }
 
-.product-details h3{
-    padding-top: 1%;
-    font-size: xx-large;
-}
+    .processor{
+        width: 60%;
+    }
 
-.product-details p {
-    text-align: center;
-    background-color: #d7d7d7;
-    font-size: larger;
-    margin-left: 20%;
-    margin-right: 20%;
+    .product-images{
+        display: none;
+    }
+
+
 }
