@@ -881,7 +881,7 @@ and desktops*/
     justify-content: center;
 }
 
-form{
+.form-section form{
     padding: 2rem 3rem;
     display: flex;
     flex-direction: column;
