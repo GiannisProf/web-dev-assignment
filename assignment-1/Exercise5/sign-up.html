@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GPtech | Sign up</title>
+    <link rel="icon" href="../assets/images/icon-logo.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <a class="logo-a" href="index.html"><img class="logo" src="../assets/images/gptech-logo.png" alt="gptech-logo"></a>
+         <nav class="top-nav">
+            <ul class="navbar">
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="product-categories.html"><i class="fa fa-shopping-basket"></i> Products</a></li>
+                <li><a href="about.html"><i class="fa fa-info"></i> About us</a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+                <div><li class="active"><a href="sign-up.html"><i class="fa fa-solid fa-user-plus"></i> Sign up</a></li></div>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <section class="form-section">
+                <div>
+                    <section class="sign-up-form">
+                        <form id="contact-form" autocomplete="on">
+                            <legend id="legend_title1"><h3>Στοιχεία χρήστη</h3></legend>
+                            <fieldset>
+                                <label for="first_name">Όνομα: </label>
+                                <input type="text" id="first_name" name="name" required>
+                                <br>
+                                <br>
+                                <label for="last_name">Επώνυμο: </label>
+                                <input type="text" id="last_name" name="surname" required>
+                                <br>
+                                <br>
+                                <label for="age">Ηλικία: </label>
+                                <input type="number" id="my_age" name="age" 
+                                    title="use numbers, age must be 18+" required>
+                                <br>
+                                <br>
+                                <label for="txt_telephone">Τηλέφωνο: </label>
+                                <input type="tel" id="txt_telephone" name="telephone" autocomplete="tel" placeholder="i.e. 2109876543" 
+                                    title="use numbers" required>
+                                <br>
+                                <br>
+                                <label for="txt_telephone2">Κινητό: </label>
+                                <input type="tel" id="txt_telephone2" name="telephone2" autocomplete="tel" placeholder="i.e. 699876543" 
+                                    title="use numbers" required>                      
+                                <br>
+                                <br>
+                                <label for="txt_email">Email: </label>
+                                <input type="email" id="txt_email" name="email" 
+                                    autocomplete="email" list="my_email" required>
+                                <datalist id="my_email">
+                                    <option>name@mail.com</option>
+                                </datalist>
+                                <br>
+                                <br>
+                                <label for="address">Διεύθυνση: </label>
+                                <input type="address" id="address" name="address" 
+                                    autocomplete="address" list="my_address" required>
+                                <datalist id="my_address">
+                                    <option>Home, Number</option>
+                                    <option>Home2, Number2</option>
+                                </datalist>
+                                <br>
+                                <br>
+                                <label for="birthday">Ημερομηνία Γέννησης: </label>
+                                <input type="date" id="bday" name="birthday" required>
+                                <br>
+                                <br>
+                                <label for="country">Χώρα: </label>
+                                <input type="text" id="country" name="country" autocomplete="country" placeholder="i.e. Greece" required>
+                                <br>
+                                <br>
+                                <label for="username">Username: </label>
+                                <input type="text" id="username" name="username" 
+                                    pattern="[a-z]{4,15}" title="4 to 15 lowercase letters" required>
+                                <br>
+                                <br>
+                                <label for="password">Password: </label>
+                                <input type="password" id="pwd" name="password" 
+                                    pattern="{5,30}" title="5-30 characters" required>
+                                <br>
+                                <br>
+                                <label for="password2">Repeat Password: </label>
+                                <input type="password" id="pwd2" name="password2" 
+                                    pattern="{5,30}" title="5-30 characters" required>
+                                <br>
+                                <br>
+                                <label for="payment-choice">Πληρωμή με: </label> <br>
+                                <input type="radio" id="payment1" name="payment1">
+                                <label for="payment1">Αντικαταβολή </label>
+                                <input type="radio" id="payment2" name="payment2">
+                                <label for="payment2">Πιστωτική κάρτα</label>
+                                <label for="payment3">Χρεωστική κάρτα</label>
+                                <input type="radio" id="payment" name="payment3">
+                            </fieldset>
+                        </form>
+                    </section>
+                    <br>
+                    <section class="questionnaire">
+                        <form id="questions" action="mailto:fotpanos@gmail.com" method="post">
+                            <legend id="legend_title2"><h3>Ερωτηματολόγιο</h3></legend>
+                        <fieldset>
+                            <label for="question1">1) Σας ενδιαφέρουν οι νέες τεχνολογίες; </label><br>
+                            <input type="radio" id="q1yes" name="question1">
+                            <label for="chk_yes">Ναι</label>
+                            <input type="radio" id="q2no" name="question1">
+                            <label for="chk_yes">Όχι</label>
+                            <br>
+                            <br>
+                            <label for="question2">2) Έχετε ασχοληθεί με κάποιον τομέα νέων τεχνολογιών; Αν όχι θα θέλατε; </label><br>
+                            <input type="text" id="q2" name="question2" value=" " required>
+                            <br>
+                            <br>
+                            <label for="question3">3) Σε ποιόν επαγγελματικό κλάδο ανήκετε;</label><br>
+                            <input type="text" id="q3" name="question3" value=" " required>
+                            <br>
+                            <br>
+                            <label for="question4">4) Έχετε κάποια εμπειρία στον συγκεκριμένο τομέα; </label><br>
+                            <input type="radio" id="q4yes" name="question4">
+                            <label for="chk_yes">Ναι</label>
+                            <input type="radio" id="q4no" name="question4">
+                            <label for="chk_yes">Όχι</label>
+                            <br>
+                            <br>
+                            <label for="question5">5) Ποιό θέμα πιστεύετε πως πρέπει να προστεθεί στην σελίδα μας; </label><br>
+                            <input type="text" id="q5" name="question5" value=" " required>
+                            <br>
+                            <br>
+                            <label for="question6">6) Με ποιόν τρόπο θα προτιμούσατε να γίνεται η επιλογή θέματος; </label><br>
+                            <input type="radio" id="q6poll" name="question6">
+                            <label for="chk_yes">Poll</label>
+                            <input type="radio" id="q4chat" name="question6">
+                            <label for="chk_yes">Chat</label>
+                            <input type="radio" id="q4email" name="question6">
+                            <label for="chk_yes">Email</label>
+                            <br>
+                            <br>
+                            <label for="question7">7) Πόσο καιρό παρακολουθείτε μαθήματα της σελίδας μας; </label><br>
+                            <input type="text" id="q7" name="question7" value=" " required>
+                            <br>
+                            <br>
+                            <label for="question8">8) Πώς ανακαλύψατε τη σελίδα; </label><br>
+                            <input type="radio" id="q8fb" name="question8">
+                            <label for="chk_yes">Facebook</label>
+                            <input type="radio" id="q8insta" name="question8">
+                            <label for="chk_yes">Instagram</label>
+                            <input type="radio" id="q8smn" name="question8">
+                            <label for="chk_yes">Μέσω γνωστού</label>
+                            <input type="radio" id="q8search" name="question8">
+                            <label for="chk_yes">Μέσω αναζήτησης</label>
+                            <input type="radio" id="q8other" name="question8">
+                            <label for="chk_yes">Άλλο</label>
+                            <br>
+                            <br>
+                            <label for="question9">9) Θα προωθούσατε τη σελίδα στα Μέσα Κοινωνικής Δικτύωσης; </label><br>
+                            <input type="radio" id="q9yes" name="question9">
+                            <label for="chk_yes">Ναι</label>
+                            <input type="radio" id="q9no" name="question9">
+                            <label for="chk_yes">Όχι</label>
+                            <br>
+                            <br>
+                            <label for="question10">10) Θα σας ενδιέφερε να συνεργαστείτε και με άλλα άτομα για την ενίσχυση του περιεχομένου της σελίδας; </label><br>
+                            <input type="radio" id="q10yes" name="question10">
+                            <label for="chk_yes">Ναι</label>
+                            <input type="radio" id="q10no" name="question10">
+                            <label for="chk_yes">Όχι</label>
+                            <br>
+                            <br>
+                        </form>
+                    </section> 
+                </div>
+                <div class="submit-button">
+                    <button type="submit" id="submit_button" onclick="validate()">Υποβολή</button>
+                </div>  
+            </section> 
+            <div class="mid-container">
+                <section class="mid">
+                    <a href="index.html"><img src="../assets/images/gptech-logo_grey.png" width=7% alt="gp tech logo"></a> 
+                </section>  
+            </div>
+            <div class="prefooter-container">
+                <p>Είμαστε εδώ για σένα, επικοινώνησε μαζί μας <a href="contact.html">εδώ</a></p>
+                <section class="prefooter">
+                    <a href="contact.html"><img src="../assets/images/mail.png" alt="mail image"></a>
+                </section>
+            </div>
+        </main>
+    
+        <footer>
+            <section class="social">
+                <a href="#"><i class="icon ion-social-github"></i></a>
+                <a href="#"><i class="icon ion-social-linkedin"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-google"></i></a></div>
+            </section>
+            <nav>
+                <ul>
+                    <li class="home"><a href="index.html">Home</a></li>
+                    <li><a href="product-categories.html">Products</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../index.html">Back to Contents</a></li>
+                </ul>
+            </nav>
+                <p>This website was developed during AUEB's "Web Programming" course. Copyright &copy; 2022, Ioannis Papachristou, Ioannis Profis. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
