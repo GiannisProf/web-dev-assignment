@@ -39,7 +39,7 @@
                                 <input type="text" id="last_name" name="surname" required>
                                 <br>
                                 <br>
-                                <label for="age">Ηλικία: </label>
+                                <label for="my_age">Ηλικία: </label>
                                 <input type="number" id="my_age" name="age" 
                                     title="use numbers, age must be 18+" required>
                                 <br>
@@ -63,7 +63,7 @@
                                 <br>
                                 <br>
                                 <label for="address">Διεύθυνση: </label>
-                                <input type="address" id="address" name="address" 
+                                <input type="address" id="address" name="address"
                                     autocomplete="address" list="my_address" required>
                                 <datalist id="my_address">
                                     <option>Home, Number</option>
@@ -72,7 +72,7 @@
                                 <br>
                                 <br>
                                 <label for="birthday">Ημερομηνία Γέννησης: </label>
-                                <input type="date" id="bday" name="birthday" required>
+                                <input type="date" id="birthday" name="birthday" required>
                                 <br>
                                 <br>
                                 <label for="country">Χώρα: </label>
@@ -85,12 +85,12 @@
                                 <br>
                                 <br>
                                 <label for="password">Password: </label>
-                                <input type="password" id="pwd" name="password" 
+                                <input type="password" id="password" name="password"
                                     pattern="{5,30}" title="5-30 characters" required>
                                 <br>
                                 <br>
                                 <label for="password2">Repeat Password: </label>
-                                <input type="password" id="pwd2" name="password2" 
+                                <input type="password" id="password2" name="password2"
                                     pattern="{5,30}" title="5-30 characters" required>
                                 <br>
                                 <br>
@@ -106,7 +106,7 @@
                     </section>
                     <br>
                     <section class="questionnaire">
-                        <form id="questions" action="mailto:fotpanos@gmail.com" method="post">
+                        <form id="questions" action="mailto:gptech@gmail.com" method="post">
                             <legend id="legend_title2"><h3>Ερωτηματολόγιο</h3></legend>
                         <fieldset>
                             <label for="question1">1) Σας ενδιαφέρουν οι νέες τεχνολογίες; </label><br>
@@ -120,61 +120,48 @@
                             <input type="text" id="q2" name="question2" value=" " required>
                             <br>
                             <br>
-                            <label for="question3">3) Σε ποιόν επαγγελματικό κλάδο ανήκετε;</label><br>
+                            <label for="question3">3) Ποιό είναι το προϊόν τεχνολογίας που σας ενδιαφέρει περισσότερο;</label><br>
                             <input type="text" id="q3" name="question3" value=" " required>
                             <br>
                             <br>
-                            <label for="question4">4) Έχετε κάποια εμπειρία στον συγκεκριμένο τομέα; </label><br>
+                            <label for="question4">4) Έχετε αγοράσει το συγκεκριμένο προϊόν πρόσφατα; </label><br>
                             <input type="radio" id="q4yes" name="question4">
                             <label for="chk_yes">Ναι</label>
                             <input type="radio" id="q4no" name="question4">
                             <label for="chk_yes">Όχι</label>
                             <br>
                             <br>
-                            <label for="question5">5) Ποιό θέμα πιστεύετε πως πρέπει να προστεθεί στην σελίδα μας; </label><br>
+                            <label for="question5">5) Ποιά κατηγορία προϊόντων πιστεύετε πως πρέπει να προστεθεί στην σελίδα μας; </label><br>
                             <input type="text" id="q5" name="question5" value=" " required>
                             <br>
-                            <br>
-                            <label for="question6">6) Με ποιόν τρόπο θα προτιμούσατε να γίνεται η επιλογή θέματος; </label><br>
-                            <input type="radio" id="q6poll" name="question6">
-                            <label for="chk_yes">Poll</label>
-                            <input type="radio" id="q4chat" name="question6">
-                            <label for="chk_yes">Chat</label>
-                            <input type="radio" id="q4email" name="question6">
-                            <label for="chk_yes">Email</label>
-                            <br>
-                            <br>
-                            <label for="question7">7) Πόσο καιρό παρακολουθείτε μαθήματα της σελίδας μας; </label><br>
-                            <input type="text" id="q7" name="question7" value=" " required>
-                            <br>
-                            <br>
-                            <label for="question8">8) Πώς ανακαλύψατε τη σελίδα; </label><br>
-                            <input type="radio" id="q8fb" name="question8">
+                            <label for="question6">6) Πώς ανακαλύψατε τη σελίδα; </label><br>
+                            <input type="radio" id="q6fb" name="question8">
                             <label for="chk_yes">Facebook</label>
-                            <input type="radio" id="q8insta" name="question8">
+                            <input type="radio" id="q6insta" name="question8">
                             <label for="chk_yes">Instagram</label>
-                            <input type="radio" id="q8smn" name="question8">
+                            <input type="radio" id="q6smn" name="question8">
                             <label for="chk_yes">Μέσω γνωστού</label>
-                            <input type="radio" id="q8search" name="question8">
+                            <input type="radio" id="q6search" name="question8">
                             <label for="chk_yes">Μέσω αναζήτησης</label>
-                            <input type="radio" id="q8other" name="question8">
+                            <input type="radio" id="q6other" name="question8">
                             <label for="chk_yes">Άλλο</label>
                             <br>
                             <br>
-                            <label for="question9">9) Θα προωθούσατε τη σελίδα στα Μέσα Κοινωνικής Δικτύωσης; </label><br>
-                            <input type="radio" id="q9yes" name="question9">
+                            <label for="question7">7) Θα προωθούσατε τη σελίδα στα Μέσα Κοινωνικής Δικτύωσης; </label><br>
+                            <input type="radio" id="q7yes" name="question9">
                             <label for="chk_yes">Ναι</label>
-                            <input type="radio" id="q9no" name="question9">
+                            <input type="radio" id="q7no" name="question9">
                             <label for="chk_yes">Όχι</label>
                             <br>
                             <br>
-                            <label for="question10">10) Θα σας ενδιέφερε να συνεργαστείτε και με άλλα άτομα για την ενίσχυση του περιεχομένου της σελίδας; </label><br>
+                            <label for="question10">10) Θα σας ενδιέφερε να λαμβάνετε νέα μας και προωθητικές ενέργειες μέσω email; </label><br>
                             <input type="radio" id="q10yes" name="question10">
                             <label for="chk_yes">Ναι</label>
                             <input type="radio" id="q10no" name="question10">
                             <label for="chk_yes">Όχι</label>
                             <br>
                             <br>
+                        </fieldset>
                         </form>
                     </section> 
                 </div>
