@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src='main.js'></script>
+    <script src='main.js' defer></script>
 </head>
 <body>
     <header>
@@ -26,88 +26,84 @@
         </header>
         <main>
             <section class="form-section">
-                <div>
-                    <section class="sign-up-form">
-                        <form id="contact-form" autocomplete="on">
-                            <legend id="legend_title1"><h3>Στοιχεία χρήστη</h3></legend>
-                            <fieldset>
-                                <label for="first_name">Όνομα: </label>
-                                <input type="text" id="first_name" name="name" required>
-                                <br>
-                                <br>
-                                <label for="last_name">Επώνυμο: </label>
-                                <input type="text" id="last_name" name="surname" required>
-                                <br>
-                                <br>
-                                <label for="my_age">Ηλικία: </label>
-                                <input type="number" id="my_age" name="age" 
-                                    title="use numbers, age must be 18+" required>
-                                <br>
-                                <br>
-                                <label for="txt_telephone">Τηλέφωνο: </label>
-                                <input type="tel" id="txt_telephone" name="telephone" autocomplete="tel" placeholder="i.e. 2109876543" 
-                                    title="use numbers" required>
-                                <br>
-                                <br>
-                                <label for="txt_telephone2">Κινητό: </label>
-                                <input type="tel" id="txt_telephone2" name="telephone2" autocomplete="tel" placeholder="i.e. 699876543" 
-                                    title="use numbers" required>                      
-                                <br>
-                                <br>
-                                <label for="txt_email">Email: </label>
-                                <input type="email" id="txt_email" name="email" 
-                                    autocomplete="email" list="my_email" required>
-                                <datalist id="my_email">
-                                    <option>name@mail.com</option>
-                                </datalist>
-                                <br>
-                                <br>
-                                <label for="address">Διεύθυνση: </label>
-                                <input type="address" id="address" name="address"
-                                    autocomplete="address" list="my_address" required>
-                                <datalist id="my_address">
-                                    <option>Home, Number</option>
-                                    <option>Home2, Number2</option>
-                                </datalist>
-                                <br>
-                                <br>
-                                <label for="birthday">Ημερομηνία Γέννησης: </label>
-                                <input type="date" id="birthday" name="birthday" required>
-                                <br>
-                                <br>
-                                <label for="country">Χώρα: </label>
-                                <input type="text" id="country" name="country" autocomplete="country" placeholder="i.e. Greece" required>
-                                <br>
-                                <br>
-                                <label for="username">Username: </label>
-                                <input type="text" id="username" name="username" 
-                                    pattern="[a-z]{4,15}" title="4 to 15 lowercase letters" required>
-                                <br>
-                                <br>
-                                <label for="password">Password: </label>
-                                <input type="password" id="password" name="password"
-                                    pattern="{5,30}" title="5-30 characters" required>
-                                <br>
-                                <br>
-                                <label for="password2">Repeat Password: </label>
-                                <input type="password" id="password2" name="password2"
-                                    pattern="{5,30}" title="5-30 characters" required>
-                                <br>
-                                <br>
-                                <label for="payment-choice">Πληρωμή με: </label> <br>
-                                <input type="radio" id="payment1" name="payment1">
-                                <label for="payment1">Αντικαταβολή </label>
-                                <input type="radio" id="payment2" name="payment2">
-                                <label for="payment2">Πιστωτική κάρτα</label>
-                                <input type="radio" id="payment" name="payment3">
-                                <label for="payment3">Χρεωστική κάρτα</label>
-                            </fieldset>
-                        </form>
-                    </section>
-                    <br>
-                    <section class="questionnaire">
-                        <form id="questions" action="mailto:gptech@gmail.com" method="post">
-                            <legend id="legend_title2"><h3>Ερωτηματολόγιο</h3></legend>
+                <form>
+                    <div class="sign-up">
+                        <legend id="legend_title1"><h3>Στοιχεία χρήστη</h3></legend>
+                        <fieldset>
+                            <label for="first_name">Όνομα: </label>
+                            <input type="text" id="first_name" name="name" required>
+                            <br>
+                            <br>
+                            <label for="last_name">Επώνυμο: </label>
+                            <input type="text" id="last_name" name="surname" required>
+                            <br>
+                            <br>
+                            <label for="my_age">Ηλικία: </label>
+                            <input type="number" id="my_age" name="age" 
+                                title="use numbers, age must be 18+" required>
+                            <br>
+                            <br>
+                            <label for="txt_telephone">Τηλέφωνο: </label>
+                            <input type="tel" id="txt_telephone" name="telephone" autocomplete="tel" placeholder="i.e. 2109876543" 
+                                title="use numbers" required>
+                            <br>
+                            <br>
+                            <label for="txt_telephone2">Κινητό: </label>
+                            <input type="tel" id="txt_telephone2" name="telephone2" autocomplete="tel" placeholder="i.e. 699876543" 
+                                title="use numbers" required>                      
+                            <br>
+                            <br>
+                            <label for="txt_email">Email: </label>
+                            <input type="email" id="txt_email" name="email" 
+                                autocomplete="email" list="my_email" required>
+                            <datalist id="my_email">
+                                <option>name@mail.com</option>
+                            </datalist>
+                            <br>
+                            <br>
+                            <label for="address">Διεύθυνση: </label>
+                            <input type="address" id="address" name="address"
+                                autocomplete="address" list="my_address" required>
+                            <datalist id="my_address">
+                                <option>Home, Number</option>
+                                <option>Home2, Number2</option>
+                            </datalist>
+                            <br>
+                            <br>
+                            <label for="birthday">Ημερομηνία Γέννησης: </label>
+                            <input type="date" id="birthday" name="birthday" required>
+                            <br>
+                            <br>
+                            <label for="country">Χώρα: </label>
+                            <input type="text" id="country" name="country" autocomplete="country" placeholder="i.e. Greece" required>
+                            <br>
+                            <br>
+                            <label for="username">Username: </label>
+                            <input type="text" id="username" name="username" 
+                                pattern="[a-z]{4,15}" title="4 to 15 lowercase letters" required>
+                            <br>
+                            <br>
+                            <label for="password">Password: </label>
+                            <input type="password" id="password" name="password"
+                                pattern="{5,30}" title="5-30 characters" required>
+                            <br>
+                            <br>
+                            <label for="password2">Repeat Password: </label>
+                            <input type="password" id="password2" name="password2"
+                                pattern="{5,30}" title="5-30 characters" required>
+                            <br>
+                            <br>
+                            <label for="payment-choice">Πληρωμή με: </label> <br>
+                            <input type="radio" id="payment1" name="payment1">
+                            <label for="payment1">Αντικαταβολή </label>
+                            <input type="radio" id="payment2" name="payment2">
+                            <label for="payment2">Πιστωτική κάρτα</label>
+                            <input type="radio" id="payment" name="payment3">
+                            <label for="payment3">Χρεωστική κάρτα</label>
+                        </fieldset>
+                    </div>
+                    <div class="questionnaire">
+                        <legend id="legend_title2"><h3>Ερωτηματολόγιο</h3></legend>
                         <fieldset>
                             <label for="question1">1) Σας ενδιαφέρουν οι νέες τεχνολογίες; </label><br>
                             <input type="radio" id="q1yes" name="question1">
@@ -162,13 +158,12 @@
                             <br>
                             <br>
                         </fieldset>
-                        </form>
-                    </section> 
-                </div>
-                <div class="submit-button">
-                    <button type="submit" id="submit_button" onclick="validate()">Υποβολή</button>
-                </div>  
-            </section> 
+                    </div>
+                    <div class="submit-button">
+                        <button type="submit" id="submit_button" value="submit"> Υποβολή </button>
+                    </div>
+                </form>
+            </section>
             <div class="mid-container">
                 <section class="mid">
                     <a href="index.html"><img src="../assets/images/gptech-logo_grey.png" width=7% alt="gp tech logo"></a> 
@@ -180,6 +175,7 @@
                     <a href="contact.html"><img src="../assets/images/mail.png" alt="mail image"></a>
                 </section>
             </div>
+            <a class="top" href="#">Back to Top</a>
         </main>
     
         <footer>

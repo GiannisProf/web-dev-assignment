@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url("//assets/docs/Roboto/Roboto-Bold.ttf") format('truetype') ;
+    font-family: Roboto;
+    src: local("Roboto"), url("../assets/docs/Roboto/Roboto-Regular.ttf");
 }
 
 /*o parakatw kanonas kanei to swma kathe selidas grid me 3 rows(header, main, footer) pou h kathe mia 

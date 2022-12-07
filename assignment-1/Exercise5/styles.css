@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url("//assets/docs/Roboto/Roboto-Bold.ttf") format('truetype') ;
+    font-family: Roboto;
+    src: local("Roboto"), url("../assets/docs/Roboto/Roboto-Regular.ttf");
 }
 
 /*o parakatw kanonas kanei to swma kathe selidas grid me 3 rows(header, main, footer) pou h kathe mia 
@@ -875,7 +875,7 @@ and desktops*/
     }
 }
 
-.form-section div{
+.form-section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -884,8 +884,7 @@ and desktops*/
 .form-section form{
     padding: 2rem 3rem;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 
 fieldset{
@@ -894,8 +893,11 @@ fieldset{
     background-color: #dddddd;
 }
 
+legend{
+    margin-top: 1rem;
+}
 
-.sign-up-form input, .questionnaire input, .form-section button{
+.form-section form input, .form-section button{
     border: none;
     border:solid 1.5px #111;
     border-radius: 10px;
@@ -916,7 +918,8 @@ fieldset{
 }
 
 .form-section button:hover{
-    opacity: 0.8;
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 input{
@@ -924,7 +927,7 @@ input{
 }
 
 /* The device with borders */
-.smartphone {
+.smartphone-container {
     position: relative;
     width: 360px;
     height: 640px;
@@ -936,7 +939,7 @@ input{
 }
 
 /* The horizontal line on the top of the device */
-.smartphone:before {
+.smartphone-container:before {
     content: '';
     display: block;
     width: 60px;
@@ -950,7 +953,7 @@ input{
 }
 
 /* The circle on the bottom of the device */
-.smartphone:after {
+.smartphone-container:after {
     content: '';
     display: block;
     width: 35px;
@@ -964,14 +967,29 @@ input{
 }
 
 /* The screen (or content) of the device */
-.smartphone .content {
+.smartphone-container .content {
     width: 360px;
     height: 640px;
     background: white;
 }
 
-.smartphone .content iframe {
+.smartphone-container .content iframe {
     width:100%;
     border:none;
     height:100%;
+}
+
+.top {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+    position: sticky;
+    margin-bottom: 1.5rem;
+    width: 8%;
+    bottom: 50px;
+    left: 90%;
 }
