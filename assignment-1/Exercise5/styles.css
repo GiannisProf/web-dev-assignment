@@ -730,6 +730,10 @@ and desktops*/
     .product-images{
         display: none;
     }
+
+    .top{
+        display: none;
+    }
 } 
 
 @media only screen and (min-width: 801px) and (max-width: 1300px) {
@@ -871,6 +875,10 @@ and desktops*/
     }
 
     .product-images{
+        display: none;
+    }
+
+    .top{
         display: none;
     }
 }
