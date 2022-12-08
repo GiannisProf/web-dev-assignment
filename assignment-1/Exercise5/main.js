@@ -58,21 +58,11 @@ mail.addEventListener('invalid', () => {
     }
 );
 
-const password = document.getElementById("password");
-const repeat_password = document.getElementById("password2");
+function check(p1, p2) {
+    const password = document.getElementById(p1).value;
+    const password2 = document.getElementById(p2).value;
 
-
-repeat_password.addEventListener('input', () =>  {
-    repeat_password.setCustomValidity('');
-    repeat_password.checkValidity();
-    check(password, repeat_password);
-});
-
-function check(password, repeat_password) {
-    if (!(password === repeat_password)) {
-        repeat_password.addEventListener('invalid', () => {
-                repeat_password.setCustomValidity('Password isn\'t the same in the two fields');
-            }
-        );
-    }
+    if (password.length === 0 || password2 === 0) {return;}
+    if (password === password2) {return;}
+    alert("The password must be identical in both fields")
 }
