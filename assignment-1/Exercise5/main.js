@@ -57,3 +57,22 @@ mail.addEventListener('invalid', () => {
         mail.setCustomValidity('This is not an accurate e-mail address. Please try again!');
     }
 );
+
+const password = document.getElementById("password");
+const repeat_password = document.getElementById("password2");
+
+
+repeat_password.addEventListener('input', () =>  {
+    repeat_password.setCustomValidity('');
+    repeat_password.checkValidity();
+    check(password, repeat_password);
+});
+
+function check(password, repeat_password) {
+    if (!(password === repeat_password)) {
+        repeat_password.addEventListener('invalid', () => {
+                repeat_password.setCustomValidity('Password isn\'t the same in the two fields');
+            }
+        );
+    }
+}
